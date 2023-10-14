@@ -1,7 +1,7 @@
 import styles from "./SelectAvatarButton.module.css";
 import robot_icon from "../../assets/robot_icon.png";
 import cartoon_icon from "../../assets/cartoon_icon.png";
-import custom_icon from "../../assets/icon.png";
+import custom_icon from "../../assets/cartoon_icon.png";
 
 interface Props {
     setSelectedAvatar: (avatar: string) => void;

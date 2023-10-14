@@ -1,7 +1,7 @@
 #!/bin/sh
 
 echo 'Creating python virtual environment "backend/backend_env"'
-python -m venv backend/backend_env
+python3 -m venv backend/backend_env
 
 echo ""
 echo "Restoring backend python packages"
