@@ -1,5 +1,13 @@
 #!/bin/sh
 
+if [ "$1" = "dev" ]; then
+    cd frontend/
+    echo "Starting website in development mode"
+    npm run dev
+    cd ../backend
+    exit $?
+fi
+
 echo 'Creating python virtual environment "backend/backend_env"'
 python3 -m venv backend/backend_env
 

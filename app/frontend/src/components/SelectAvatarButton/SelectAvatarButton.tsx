@@ -1,7 +1,11 @@
 import styles from "./SelectAvatarButton.module.css";
 import robot_icon from "../../assets/robot_icon.png";
 import cartoon_icon from "../../assets/cartoon_icon.png";
+<<<<<<< Updated upstream
 import custom_icon from "../../assets/cartoon_icon.png";
+=======
+//import custom_icon from "../../assets/icon.png";
+>>>>>>> Stashed changes
 
 interface Props {
     setSelectedAvatar: (avatar: string) => void;
@@ -45,7 +49,7 @@ export const SelectAvatarButton = ({ setSelectedAvatar, selectedAvatar, setSpeak
             <div className={styles.logo}>
                 <img
                     className={selectedAvatar === "custom" ? styles.logoSelected : styles.img}
-                    src={custom_icon}
+                    //src={custom_icon}
                     id="change-to-custom-button"
                     alt="custom icon"
                     aria-label="Change to custom avatar"
