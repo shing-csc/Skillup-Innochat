@@ -1,33 +1,27 @@
 import React from 'react'
 import { Link, Routes, Route } from "react-router-dom";
+import {useState, useEffect} from 'react'
 
-
-import Login from "./Login"
-import WebForm from "./WebForm"
-import StudyPlan from "./StudyPlan"
-
-import Chat from "./chat/Chat";
 
 const Main = () => {
+
+    /**
+     * const [username, setUsername] = useState('')
+     *  - We will try to pass the username and the setUsername to the /login path
+     *  - Now this will be placed in the /login path directly for better testing
+     */
+
     return (
         <div>
             This is the main page
-            <ul>
-                <li> <Link to = "/login"> Logn Page </Link>  </li>
+            {/**
+             * <ul>
+                <li> <Link to = "/login"> Login Page </Link>  </li>
                 <li> <Link to = "/webform"> Web Form Page </Link> </li>
                 <li> <Link to = "/chat"> Chat Page </Link> </li>
                 <li> <Link to = "/studyplan"> Study Plan Page </Link> </li>
-            </ul>
-
-            <Routes>
-                
-                <Route path = "/login" element = {<Login/>} /> 
-                <Route path = "/webform" element = {<WebForm/>} /> 
-                <Route path = "/chat" element = {<Chat/>} />
-                <Route path = "/studyplan" element = {<StudyPlan/>} /> 
-
-            </Routes>
-                       
+            </ul>  
+             */}                     
         </div>
     )
 }

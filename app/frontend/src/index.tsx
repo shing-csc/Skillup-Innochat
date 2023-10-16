@@ -1,20 +1,32 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { HashRouter, BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import { initializeIcons } from "@fluentui/react";
 
 
 import "./index.css";
 
-import Main from "./pages/Main"
+//The first page: Login page
+import Login from "./pages/Login"
 
+// The sub-pages
+import WebForm from "./pages/WebForm"
+import StudyPlan from "./pages/StudyPlan"
+import Chat from "./pages/chat/Chat";
 
 initializeIcons();
 
 export default function App() {
     return (
         <BrowserRouter>
-            <Main/>
+            
+            <Routes>
+                <Route path="/" element={<Login />} />
+                <Route path="/webform" element={<WebForm />} />
+                <Route path="/chat" element={<Chat />} />
+                <Route path="/studyplan" element={<StudyPlan />} />
+            </Routes>
+
         </BrowserRouter>
     );
 }
