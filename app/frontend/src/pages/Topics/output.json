@@ -1,0 +1,87 @@
+{
+    "subject": "Python",
+    "plan": {
+        "chapters": {
+            "1": {
+                "name": "Introduction to Python",
+                "time": "60",
+                "links": [
+                    "www.youtube.com",
+                    "www.python.org"
+                ]
+            },
+            "2": {
+                "name": "Variables and Data Types",
+                "time": "60",
+                "links": [
+                    "www.youtube.com",
+                    "www.python.org"
+                ]
+            },
+            "3": {
+                "name": "Control Flow",
+                "time": "60",
+                "links": [
+                    "www.youtube.com",
+                    "www.python.org"
+                ]
+            },
+            "4": {
+                "name": "Functions",
+                "time": "60",
+                "links": [
+                    "www.youtube.com",
+                    "www.python.org"
+                ]
+            },
+            "5": {
+                "name": "Lists and Tuples",
+                "time": "60",
+                "links": [
+                    "www.youtube.com",
+                    "www.python.org"
+                ]
+            },
+            "6": {
+                "name": "Dictionaries",
+                "time": "60",
+                "links": [
+                    "www.youtube.com",
+                    "www.python.org"
+                ]
+            },
+            "7": {
+                "name": "File Handling",
+                "time": "60",
+                "links": [
+                    "www.youtube.com",
+                    "www.python.org"
+                ]
+            },
+            "8": {
+                "name": "Modules and Packages",
+                "time": "60",
+                "links": [
+                    "www.youtube.com",
+                    "www.python.org"
+                ]
+            },
+            "9": {
+                "name": "Error Handling",
+                "time": "60",
+                "links": [
+                    "www.youtube.com",
+                    "www.python.org"
+                ]
+            },
+            "10": {
+                "name": "Object-Oriented Programming",
+                "time": "60",
+                "links": [
+                    "www.youtube.com",
+                    "www.python.org"
+                ]
+            }
+        }
+    }
+}
