@@ -1,3 +1,5 @@
+/** The below are the components used in the Login.tsx */
+
 .containerPos{
     top: 10%;
 }
@@ -16,11 +18,21 @@
     border-radius: 1rem;
 
     position: relative;
-    left: 3rem;
-
-    
+    left: 3rem;   
 }
 
 .largeHeading{
     font-family: 'Times New Roman', Times, serif;
+}
+
+/** The below are the components used in the WebForm.tsx */
+
+.webFormButton{
+    width: 18rem;
+    height: 3rem;
+    background-color: rgba(84, 230, 147, 0.593);
+    
+    color: black;
+    
+    border-radius: 1rem;
 }

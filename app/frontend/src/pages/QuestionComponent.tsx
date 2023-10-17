@@ -1,6 +1,6 @@
 import { IntentRecognitionResult } from 'microsoft-cognitiveservices-speech-sdk'
-import React from 'react'
-import { Container, ButtonGroup, ToggleButton, Form} from 'react-bootstrap'
+import {useState} from 'react'
+import {Form} from 'react-bootstrap'
 
 interface Props {
     now: number;
@@ -12,10 +12,15 @@ interface Props {
 
 const QuestionComponent = ({now, setNow, question, choices, content}: Props) => {
     
+    const [checked, setChecked] = useState(false);
+
     return (
         <div>
             <Form>
-                <label style = {{fontSize:"large"}}>Question {question}: {content}</label>
+            
+                <label>
+                    Question {question}: {content}
+                </label>
                 {
                     choices.map((choice, index) => (
                         <Form.Check
@@ -24,11 +29,17 @@ const QuestionComponent = ({now, setNow, question, choices, content}: Props) => 
                             name={`group${question}`}
                             type={'radio'}
                             id={`reverse-radio-${index}`}
-                            onChange = {(e) => setNow(now + 10)}
+                            onChange = {(e) =>{
+                                if (checked == false){
+                                    setChecked(true)
+                                    setNow(now + 25)
+                                }
+                            }}
                             />
                     )
                     )
                 }
+                
                 <div> <h2 > <br/> </h2></div>
             </Form>
             
