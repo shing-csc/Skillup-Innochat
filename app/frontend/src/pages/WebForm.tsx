@@ -31,16 +31,26 @@ const WebForm = () => {
                             now = {now}
                             setNow = {setNow}
                             question = {1}
+                            choices = {['Technology', 'Business', 'Lanaguages']}
+                            content = "Which field are you more interested?"
                         />
                         <QuestionComponent
                             now = {now}
                             setNow = {setNow}
                             question = {2}
+                            choices = {['Leverage your knowledge in a particular field', 
+                            'For re-entering the labour market', 
+                            'Learning for interest']}
+                            content = "Do you have any specific goals for your study?"
                         />
                         <QuestionComponent
                             now = {now}
                             setNow = {setNow}
                             question = {3}
+                            choices = {['Below 6 hours', 
+                            'Between 6 - 10 hours', 
+                            'More than 10 hours']}
+                            content = "How many hours per week do you plan to dedicate to studying?"
                         />
                     
                     </Col>
