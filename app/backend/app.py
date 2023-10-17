@@ -211,6 +211,74 @@ def visemeAudio():
         return resp
     else:
         return jsonify({"error": "no audio"}), 400
+
+@app.route("/json", methods=["GET"])
+def retrieveJson():
+    def compute_embedding(text):
+        return openai.Embedding.create(engine="embedding", input=text)["data"][0]["embedding"]
+
+    def nonewlines(s: str) -> str:
+        return s.replace(' ', ' ').replace('\r', ' ')
+
+    query = ""
+    query_vector = compute_embedding(query)
+
+    r = search_client.search(query, 
+                        top=3, 
+                        vector=query_vector, 
+                        top_k=50, 
+                        vector_fields="embedding")
+
+    results = [doc["sourcepage"] + ": " + nonewlines(doc["content"]) for doc in r]
+    systemMessage = """
+                Assistant that ONLY answers JSON formatted response. You are a profession teacher that creates designated study plan for students with different needs.
+                Return a study plan in JSON format. Below is a situation and an example.
+                A student is studying Calculus 1. 
+                Below is a general study plan for him in JSON format.
+                {
+                    "subject": 
+                    "plan": {
+                        "chapters": {
+                            "1": {
+                                    "name": "Limit and Continuity",
+                                    "time": "60",
+                                    "links": ["www.youtube.com", "www.facebook.com"]
+                                },
+                            "2": {
+                                    "name": "Differentiation",
+                                    "time": "60",
+                                    "links": ["www.youtube.com", "www.facebook.com"]
+                                },
+                            }
+                        }
+                    },
+                    }
+                }
+                """
+    messages = [
+        {'role' : 'system', 'content' : systemMessage},
+        {'role' : 'user', 'content' : query + "   Source:" + " ".join(results)}
+    ]
+
+    chat_completion = openai.ChatCompletion.create(
+        deployment_id="chat",
+        model="gpt-35-turbo",
+        messages=messages, 
+        temperature=0.7, 
+        max_tokens=1024, 
+        n=1)
+    
+    chat_content = chat_completion.choices[0].message.content
+
+    def string_to_json_file(string, file_name):
+        string = json.loads(string)
+        with open(file_name, 'w') as json_file:
+            json.dump(string, json_file, indent=4)
+
+    string_to_json_file(chat_content, "../frontend/src/")
+
+    return jsonify({"response": "completed"}), 400
+    
     
 
 if __name__ == "__main__":
