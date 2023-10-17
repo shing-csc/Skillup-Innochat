@@ -275,7 +275,7 @@ def retrieveJson():
         with open(file_name, 'w') as json_file:
             json.dump(string, json_file, indent=4)
 
-    string_to_json_file(chat_content, "../frontend/src/")
+    string_to_json_file(chat_content, "../frontend/src/pages/Topics/output.json")
 
     return jsonify({"response": "completed"}), 400
     
