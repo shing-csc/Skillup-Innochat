@@ -12,7 +12,8 @@ import Login from "./pages/Login"
 // The sub-pages
 import WebForm from "./pages/WebForm"
 import StudyPlan from "./pages/StudyPlan"
-import Chat from "./pages/chat/Chat";
+import Chat from "./pages/chat/Chat"
+import ProgressPage from "./pages/ProgressPage"
 
 initializeIcons();
 
@@ -23,6 +24,7 @@ export default function App() {
             <Routes>
                 <Route path="/" element={<Login />} />
                 <Route path="/webform" element={<WebForm />} />
+                <Route path="/progresspage" element={<ProgressPage />} />
                 <Route path="/chat" element={<Chat />} />
                 <Route path="/studyplan" element={<StudyPlan />} />
             </Routes>

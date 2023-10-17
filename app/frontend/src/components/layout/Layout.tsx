@@ -37,7 +37,7 @@ const Layout = ({ setMode, mode }: Props) => {
                                 className={activeLink == "chat" ? styles.headerNavPageLinkActive : styles.headerNavPageLink}
                                 onClick={onNavClick}
                             >
-                                InnoChat
+                            Chatbot
                             </a>
                         </li>
                         <li className={styles.headerNavLeftMargin}>
