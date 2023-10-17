@@ -1,0 +1,85 @@
+{
+    "subject": "Python",
+    "plan": {
+        "chapters": {
+            "1": {
+                "name": "Introduction to Python",
+                "time": "60",
+                "links": [
+                    "www.python.org",
+                    "www.w3schools.com/python"
+                ]
+            },
+            "2": {
+                "name": "Variables and Data Types",
+                "time": "60",
+                "links": [
+                    "www.w3schools.com/python/python_variables.php"
+                ]
+            },
+            "3": {
+                "name": "Control Flow",
+                "time": "60",
+                "links": [
+                    "www.programiz.com/python-programming/if-elif-else"
+                ]
+            },
+            "4": {
+                "name": "Functions",
+                "time": "60",
+                "links": [
+                    "www.learnpython.org/en/Functions"
+                ]
+            },
+            "5": {
+                "name": "Lists and Tuples",
+                "time": "60",
+                "links": [
+                    "www.w3schools.com/python/python_lists.php"
+                ]
+            },
+            "6": {
+                "name": "Dictionaries",
+                "time": "60",
+                "links": [
+                    "www.learnpython.org/en/Dictionaries"
+                ]
+            },
+            "7": {
+                "name": "File Handling",
+                "time": "60",
+                "links": [
+                    "www.w3schools.com/python/python_file_handling.php"
+                ]
+            },
+            "8": {
+                "name": "Modules and Packages",
+                "time": "60",
+                "links": [
+                    "www.programiz.com/python-programming/modules"
+                ]
+            },
+            "9": {
+                "name": "Error Handling",
+                "time": "60",
+                "links": [
+                    "www.w3schools.com/python/python_try_except.php"
+                ]
+            },
+            "10": {
+                "name": "Object-Oriented Programming",
+                "time": "60",
+                "links": [
+                    "www.learnpython.org/en/Object_Oriented_Programming"
+                ]
+            },
+            "11": {
+                "name": "Advanced Topics",
+                "time": "60",
+                "links": [
+                    "www.python.org/dev/peps/pep-0008"
+                ]
+            }
+        }
+    }
+}
