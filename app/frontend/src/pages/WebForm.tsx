@@ -91,7 +91,7 @@ const WebForm = () => {
                                 className='webFormButton'
                                 type = "submit"
                                 aria-label = "Submit"
-                                onClick = {()=> navigate('/chat')}
+                                onClick = {()=> navigate('/progresspage')}
                             > 
                                 <b> Proceed to our Personal Planner </b>
                             </button>
