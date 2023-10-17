@@ -32,7 +32,7 @@ const QuestionComponent = ({now, setNow, question, choices, content}: Props) => 
                             onChange = {(e) =>{
                                 if (checked == false){
                                     setChecked(true)
-                                    setNow(now + 25)
+                                    setNow(now + 13)
                                 }
                             }}
                             />

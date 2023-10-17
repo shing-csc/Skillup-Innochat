@@ -25,14 +25,14 @@ const Login = () => {
                 </Row>
                 <Row>
                     
-                    <Col >
+                    <Col sm = {0} lg = {7}>
                         <Image 
                             src = {loginIcon} 
                             rounded
                             style = {{width: "40rem", height: "30rem"}}/>
                     </Col>
 
-                    <Col >
+                    <Col xs = {12} lg = {4} >
                         
                         <h2> Join today. </h2>
                         <Form className = "formContainer">

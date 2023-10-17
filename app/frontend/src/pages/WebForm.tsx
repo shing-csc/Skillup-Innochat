@@ -23,21 +23,26 @@ const WebForm = () => {
 
                     <Col md ={3} >
 
-                        <div style={{ marginBottom: "20px", textAlign: "center"}}>
+                        <div style={{ marginBottom: "20px",
+                                     textAlign: "center",
+                                     position: "sticky",
+                                     top: "10rem",
+                                    
+
+                                    }}>
                                 <h6> Progress Bar: {now}%</h6>
-                        </div>
+                        
 
                         <ProgressBar 
                             now = {now} 
                             label = {`${now}%`} 
                             visuallyHidden
                             animated
+                            
                             variant="success"
-                            style = {{ 
-                                position: "sticky"
-                                
-                        }}  
+                            
                         />
+                        </div>
 
                     </Col>
                     
@@ -72,7 +77,36 @@ const WebForm = () => {
                                 'More than 10 hours']}
                                 content = "How many hours per week do you plan to dedicate to studying?"
                             />
-                            
+                            <QuestionComponent
+                                now = {now}
+                                setNow = {setNow}
+                                question = {4}
+                                choices = {['Below 6 hours', 
+                                'Between 6 - 10 hours', 
+                                'More than 10 hours']}
+                                content = "How many hours per week do you plan to dedicate to studying?"
+                            />
+                            <QuestionComponent
+                                now = {now}
+                                setNow = {setNow}
+                                question = {5}
+                                choices = {['Written Comments', 'Verbal Feedback', 'One-on-one Consultation']}
+                                content = "What type of feedback is most helpful for your learning process?"
+                            />
+                            <QuestionComponent
+                                now = {now}
+                                setNow = {setNow}
+                                question = {7}
+                                choices = {['Start Early', 'Work Steadily Over Time', 'Last Minute']}
+                                content = "How do you typically handle assignments and deadlines?"
+                            />
+                            <QuestionComponent
+                                now = {now}
+                                setNow = {setNow}
+                                question = {8}
+                                choices = {['English', 'Spanish', 'Mandarin', 'Other']}
+                                content = "What is your preferred language of instruction?"
+                            />
                         </div>
 
                         <div>
@@ -109,8 +143,6 @@ const WebForm = () => {
                             </button>
                         </div>
 
-                        
-                        
                     </Col>
                 
                 </Row>
