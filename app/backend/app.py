@@ -220,7 +220,7 @@ def retrieveJson():
     def nonewlines(s: str) -> str:
         return s.replace(' ', ' ').replace('\r', ' ')
 
-    query = ""
+    query = "Generate a blender course from beginners to advanced."
     query_vector = compute_embedding(query)
 
     r = search_client.search(query, 
@@ -234,7 +234,7 @@ def retrieveJson():
                 Assistant that ONLY answers JSON formatted response. You are a profession teacher that creates designated study plan for students with different needs.
                 Return a study plan in JSON format. Below is a situation and an example.
                 A student is studying Calculus 1. 
-                Below is a general study plan for him in JSON format.
+                Below is a general study plan for him in JSON format. Please strictly follow the below format when giving out responses.
                 {
                     "subject": 
                     "plan": {
@@ -277,7 +277,7 @@ def retrieveJson():
 
     string_to_json_file(chat_content, "../frontend/src/pages/Topics/output.json")
 
-    return jsonify({"response": "completed"}), 400
+    return jsonify({"response": "completed"}), 200
     
     
 

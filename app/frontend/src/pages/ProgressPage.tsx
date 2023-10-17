@@ -5,15 +5,26 @@ import { useNavigate } from 'react-router-dom';
 const ProgressPage = () => {
     const [progress, setProgress] = useState(0); 
     const [finished, setFinished] = useState(false);
+    const [fetched, setFetched] = useState(false);
     const navigate = useNavigate();
     const [progressText, setProgressText] = useState("0% Completed");
 
     useEffect(() => {
-        if (finished === true) {
-            setTimeout(() => {
-                navigate('/chat'); // Navigate to the new page
-            }, 500); // Set a timeout to wait for the progress bar animation to finish
-        }
+        // Fetch data asynchronously
+        const fetchData = async () => {
+            try {
+                const response = await fetch('/json');
+                if (response.status === 200) { // if status code is 200
+                    setFetched(true);
+                    console.log("Fetched")
+                }
+            } catch (error) {
+                console.error('Error:', error);
+            }
+        };
+    
+        fetchData();
+    
         // Set an interval to update the progress
         const interval = setInterval(() => {
             setProgress((oldProgress) => {
@@ -27,9 +38,21 @@ const ProgressPage = () => {
                 return newProgress;
             });
         }, 500);
-
+    
         return () => clearInterval(interval); // Clear the interval when the component unmounts
-    }, [finished]);
+    }, []); // Removed fetched from the dependency array
+    
+    useEffect(() => {
+        if (finished === true && fetched === true) {
+            setProgressText("Generated Study Plan!")
+            setTimeout(() => {
+                navigate('/chat'); // Navigate to the new page
+            }, 1000);
+        }
+        else if (finished === true && fetched === false) {
+            setProgressText("Generating Study Plan...")
+        }
+    }, [finished, fetched]);
 
     return (
         <Container style={{ height: '100vh' }}>
