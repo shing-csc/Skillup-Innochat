@@ -15,7 +15,7 @@ const Login = () => {
     const navigate = useNavigate();
 
     return (
-        <div>
+        <div style = {{backgroundColor: "white"}}>
             
             <Container >
                 <Row>

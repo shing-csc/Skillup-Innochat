@@ -11,8 +11,8 @@ const WebForm = () => {
     const navigate = useNavigate();
 
     return (
-        <>
-            <Container>
+        < div style = {{backgroundColor: "white"}}>
+            <Container >
                 <Row>
                     <h2> <br/></h2>
                     <h2>Here is a form for us to know more about you. </h2>
@@ -105,7 +105,7 @@ const WebForm = () => {
             
 
             
-        </>
+        </div>
     )
 }
 
