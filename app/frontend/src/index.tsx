@@ -11,6 +11,7 @@ import Login from "./pages/Login"
 
 // The sub-pages
 import WebForm from "./pages/WebForm"
+import Main from "./pages/Main"
 import StudyPlan from "./pages/StudyPlan"
 import Chat from "./pages/chat/Chat";
 
@@ -25,6 +26,7 @@ export default function App() {
                 <Route path="/webform" element={<WebForm />} />
                 <Route path="/chat" element={<Chat />} />
                 <Route path="/studyplan" element={<StudyPlan />} />
+                <Route path="/main" element= {<Main/>}/>
             </Routes>
 
         </BrowserRouter>

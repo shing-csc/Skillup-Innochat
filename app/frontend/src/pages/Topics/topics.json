@@ -1,0 +1,35 @@
+{
+    "blender": [
+        {   
+            "week": 1,
+            "content": [
+                {
+                    "day": 1,
+                    "theme": "Introduction to Blender and Interface",
+                    "Resource": "https://www.youtube.com/playlist?list=PLa1F2ddGya_-UvuAqHAksYnB0qL9yWDO6"
+                },
+                {
+                    "day": 2,
+                    "theme": " 3D Modeling - Basics",
+                    "Resource": "https://www.youtube.com/playlist?list=PLjEaoINr3zgFX8ZsChQVQsuDSjEqdWMAD"
+                },
+                {
+                    "day": 3,
+                    "theme": "3D Modeling Self Project I: Isometric Bedroom",
+                    "Resource": "https://www.youtube.com/watch?v=yCHT23A6aJA"
+                },
+                {
+                    "day": 4,
+                    "theme": "Modelling, texturing, shaders and lighting",
+                    "Resource": "https://www.youtube.com/playlist?list=PLjEaoINr3zgHJVJF3T3CFUAZ6z11jKg6a"
+                },
+                {
+                    "day": 5,
+                    "theme": "3D Modeling Self Project II: Smooth 3D Living Room",
+                    "Resource": "https://www.youtube.com/watch?v=dEGJeVnWZAA"
+                }
+            ]
+        }        
+    ]
+    
+}

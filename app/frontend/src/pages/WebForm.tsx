@@ -96,6 +96,20 @@ const WebForm = () => {
                                 <b> Proceed to our Personal Planner </b>
                             </button>
                         </div>
+
+                        <div>
+                            
+                            <button
+                                className='webFormButton'
+                                type = "submit"
+                                aria-label = "Submit"
+                                onClick = {()=> navigate('/main')}
+                            > 
+                                <b> Only for testing: to the main.tsx </b>
+                            </button>
+                        </div>
+
+                        
                         
                     </Col>
                 
