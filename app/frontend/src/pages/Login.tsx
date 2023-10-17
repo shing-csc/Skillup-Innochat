@@ -21,7 +21,7 @@ const Login = () => {
                 <Row>
                     <h1 > <br/> </h1>
                     <h1 > Make it Happen with SkillUp </h1>
-                    <h1 > <br/> </h1>
+                    <h2 > <br/> </h2>
                 </Row>
                 <Row>
                     
