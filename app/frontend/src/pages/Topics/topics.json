@@ -6,27 +6,65 @@
                 {
                     "day": 1,
                     "theme": "Introduction to Blender and Interface",
-                    "Resource": "https://www.youtube.com/playlist?list=PLa1F2ddGya_-UvuAqHAksYnB0qL9yWDO6"
+                    "resource": "https://www.youtube.com/playlist?list=PLa1F2ddGya_-UvuAqHAksYnB0qL9yWDO6"
                 },
                 {
                     "day": 2,
                     "theme": " 3D Modeling - Basics",
-                    "Resource": "https://www.youtube.com/playlist?list=PLjEaoINr3zgFX8ZsChQVQsuDSjEqdWMAD"
+                    "resource": "https://www.youtube.com/playlist?list=PLjEaoINr3zgFX8ZsChQVQsuDSjEqdWMAD"
                 },
                 {
                     "day": 3,
                     "theme": "3D Modeling Self Project I: Isometric Bedroom",
-                    "Resource": "https://www.youtube.com/watch?v=yCHT23A6aJA"
+                    "resource": "https://www.youtube.com/watch?v=yCHT23A6aJA"
                 },
                 {
                     "day": 4,
                     "theme": "Modelling, texturing, shaders and lighting",
-                    "Resource": "https://www.youtube.com/playlist?list=PLjEaoINr3zgHJVJF3T3CFUAZ6z11jKg6a"
+                    "resource": "https://www.youtube.com/playlist?list=PLjEaoINr3zgHJVJF3T3CFUAZ6z11jKg6a"
                 },
                 {
                     "day": 5,
                     "theme": "3D Modeling Self Project II: Smooth 3D Living Room",
-                    "Resource": "https://www.youtube.com/watch?v=dEGJeVnWZAA"
+                    "resource": "https://www.youtube.com/watch?v=dEGJeVnWZAA"
+                }
+            ]
+        }        
+    ],
+    "python": [
+        {   
+            "week": 1,
+            "content": [
+                {
+                    "day": 1,
+                    "theme": "React JS Tutorial 1 - Introduction",
+                    "resource": "https://www.youtube.com/watch?v=QFaFIcGhPoM&list=PLC3y8-rFHvwgg3vaYJgHGnModB54rxOk3&index=1&t=512s"
+                },
+                {
+                    "day": 2,
+                    "theme": "React JS Tutorial 2 - Hello World",
+                    "resource": "https://www.youtube.com/watch?v=9hb_0TZ_MVI&list=PLC3y8-rFHvwgg3vaYJgHGnModB54rxOk3&index=2"
+                },
+                {
+                    "day": 3,
+                    "theme": "React JS Tutorial 3 - Folder Structure",
+                    "resource": "https://www.youtube.com/watch?v=9VIiLJL0H4Y&list=PLC3y8-rFHvwgg3vaYJgHGnModB54rxOk3&index=3"
+                },
+                {
+                    "day": 4,
+                    "theme": "React JS Tutorial 4 - Components",
+                    "resource": "https://www.youtube.com/watch?v=Y2hgEGPzTZY&list=PLC3y8-rFHvwgg3vaYJgHGnModB54rxOk3&index=4"
+                },
+                {
+                    "day": 5,
+                    "theme": "React JS Tutorial 5 - Functional Components",
+                    "resource": "https://www.youtube.com/watch?v=Cla1WwguArA&list=PLC3y8-rFHvwgg3vaYJgHGnModB54rxOk3&index=5"
+                }
+                ,
+                {
+                    "day": 6,
+                    "theme": "React JS Tutorial 6 - Class Components",
+                    "resource": "https://www.youtube.com/watch?v=lnV34uLEzis&list=RDCMUC80PWRj_ZU8Zu0HSMNVwKWw&index=2"
                 }
             ]
         }        
