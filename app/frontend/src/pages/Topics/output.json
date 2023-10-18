@@ -1,5 +1,5 @@
 {
-    "subject": "Blender",
+    "subject": "Blender Course",
     "plan": {
         "chapters": {
             "1": {
@@ -7,71 +7,79 @@
                 "time": "60",
                 "links": [
                     "www.youtube.com",
-                    "www.blender.org"
+                    "www.facebook.com"
                 ]
             },
             "2": {
-                "name": "Basic Modeling",
-                "time": "90",
+                "name": "Navigating the Blender Interface",
+                "time": "60",
                 "links": [
                     "www.youtube.com",
-                    "www.blender.org"
+                    "www.facebook.com"
                 ]
             },
             "3": {
-                "name": "Advanced Modeling",
+                "name": "Modeling Basics",
                 "time": "90",
                 "links": [
                     "www.youtube.com",
-                    "www.blender.org"
+                    "www.facebook.com"
                 ]
             },
             "4": {
-                "name": "Texturing and Materials",
-                "time": "120",
-                "links": [
-                    "www.youtube.com",
-                    "www.blender.org"
-                ]
-            },
-            "5": {
-                "name": "Lighting and Rendering",
-                "time": "120",
-                "links": [
-                    "www.youtube.com",
-                    "www.blender.org"
-                ]
-            },
-            "6": {
-                "name": "Animation",
-                "time": "150",
-                "links": [
-                    "www.youtube.com",
-                    "www.blender.org"
-                ]
-            },
-            "7": {
-                "name": "Simulation and Dynamics",
-                "time": "150",
-                "links": [
-                    "www.youtube.com",
-                    "www.blender.org"
-                ]
-            },
-            "8": {
-                "name": "Compositing and Post-Processing",
+                "name": "Working with Materials and Textures",
                 "time": "90",
                 "links": [
                     "www.youtube.com",
-                    "www.blender.org"
+                    "www.facebook.com"
                 ]
             },
-            "9": {
-                "name": "Advanced Techniques",
+            "5": {
+                "name": "Introduction to Animation",
                 "time": "120",
                 "links": [
                     "www.youtube.com",
-                    "www.blender.org"
+                    "www.facebook.com"
+                ]
+            },
+            "6": {
+                "name": "Advanced Animation Techniques",
+                "time": "120",
+                "links": [
+                    "www.youtube.com",
+                    "www.facebook.com"
+                ]
+            },
+            "7": {
+                "name": "Lighting and Rendering",
+                "time": "90",
+                "links": [
+                    "www.youtube.com",
+                    "www.facebook.com"
+                ]
+            },
+            "8": {
+                "name": "Creating Realistic Materials",
+                "time": "90",
+                "links": [
+                    "www.youtube.com",
+                    "www.facebook.com"
+                ]
+            },
+            "9": {
+                "name": "Advanced Modeling",
+                "time": "120",
+                "links": [
+                    "www.youtube.com",
+                    "www.facebook.com"
+                ]
+            },
+            "10": {
+                "name": "Character Animation",
+                "time": "120",
+                "links": [
+                    "www.youtube.com",
+                    "www.facebook.com"
                 ]
             }
         }
