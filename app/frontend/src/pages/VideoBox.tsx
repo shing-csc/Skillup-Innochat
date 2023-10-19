@@ -1,5 +1,6 @@
 import React from 'react'
 import { Container, Row, Col, Image, Card} from 'react-bootstrap'
+import { useNavigate } from 'react-router-dom';
 
 interface Props {
     
@@ -10,34 +11,44 @@ interface Props {
 }
 
 const VideoBox = ({day, theme, resource}: Props) => {
+
+    const navigate = useNavigate();
+
     let videoId = resource.split('v=')[1];
 
     if(videoId.indexOf('&') !== -1) {
         videoId = videoId.substring(0, videoId.indexOf('&'));
     }
 
-    const thumbNailUrl = `https://img.youtube.com/vi/${videoId}/0.jpg`
+    const thumbNailUrl = `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`
 
     return (
         <div>
-            <Row>
+            {/**<Row>
                 <h3>
                     Day {day}
                 </h3>
-            </Row>
+    </Row>*/}
             <Row>
-                {/** The Image/Thumbnail */}
+                
                 <Col>
                     
                 <Card style={{ width: '18rem' }}>
-                    <Card.Img variant="top" src={thumbNailUrl} />
+                <div 
+                    style= {{
+                        maxWidth: '18rem',
+                        background: `url(${thumbNailUrl}) no-repeat center center`,
+                        backgroundSize: "cover",
+                        aspectRatio:"16/9"
+                    }}
+                />
                     <Card.Body>
-                    <Card.Title>Card Title</Card.Title>
+                    <Card.Title> Lesson {day}</Card.Title>
                     <Card.Text>
-                        Some quick example text to build on the card title and make up the
-                        bulk of the card's content.
+                        <h5> {theme} </h5>
+                        <br/>
                     </Card.Text>
-                    <button>Go somewhere</button>
+                    <button onClick={() => navigate(`/video/${videoId}`)}>Lesson</button>
                     </Card.Body>
                 </Card>
 

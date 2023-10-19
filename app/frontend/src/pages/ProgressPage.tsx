@@ -46,7 +46,7 @@ const ProgressPage = () => {
         if (finished === true && fetched === true) {
             setProgressText("Generated Study Plan!")
             setTimeout(() => {
-                navigate('/chat'); // Navigate to the new page
+                navigate('/main'); // Navigate to the new page
             }, 1000);
         }
         else if (finished === true && fetched === false) {

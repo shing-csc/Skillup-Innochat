@@ -19,8 +19,8 @@
                 ]
             },
             "3": {
-                "name": "Advanced Modeling",
-                "time": "90",
+                "name": "Advanced Modeling Techniques",
+                "time": "120",
                 "links": [
                     "www.youtube.com",
                     "www.blender.org"
@@ -28,7 +28,7 @@
             },
             "4": {
                 "name": "Texturing and Materials",
-                "time": "120",
+                "time": "90",
                 "links": [
                     "www.youtube.com",
                     "www.blender.org"
@@ -51,15 +51,15 @@
                 ]
             },
             "7": {
-                "name": "Simulation and Dynamics",
-                "time": "150",
+                "name": "Simulation and Physics",
+                "time": "120",
                 "links": [
                     "www.youtube.com",
                     "www.blender.org"
                 ]
             },
             "8": {
-                "name": "Compositing and Post-Processing",
+                "name": "Advanced Techniques and Add-ons",
                 "time": "90",
                 "links": [
                     "www.youtube.com",
@@ -67,8 +67,8 @@
                 ]
             },
             "9": {
-                "name": "Advanced Techniques",
-                "time": "120",
+                "name": "Tips and Tricks",
+                "time": "60",
                 "links": [
                     "www.youtube.com",
                     "www.blender.org"

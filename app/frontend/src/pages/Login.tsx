@@ -71,6 +71,19 @@ const Login = () => {
                                 Sign In
                             </button>
 
+                            {/**
+                             * 
+                             *  <button
+                                className='submitButton'
+                                type = "submit"
+                                aria-label = "Submit"
+                                onClick = {()=> navigate('/main')}
+                            > 
+                                main -testing
+                            </button>
+                             */}
+                           
+
                         </Form>
                     </Col>
                 </Row>

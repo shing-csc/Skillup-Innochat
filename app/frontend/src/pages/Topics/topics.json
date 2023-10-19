@@ -7,6 +7,7 @@
                     "day": 1,
                     "theme": "Introduction to Blender and Interface",
                     "resource": "https://www.youtube.com/playlist?list=PLa1F2ddGya_-UvuAqHAksYnB0qL9yWDO6"
+                    
                 },
                 {
                     "day": 2,
@@ -27,6 +28,81 @@
                     "day": 5,
                     "theme": "3D Modeling Self Project II: Smooth 3D Living Room",
                     "resource": "https://www.youtube.com/watch?v=dEGJeVnWZAA"
+                }
+            ]
+        }        
+    ],
+    "language": [
+        {   
+            "week": 1,
+            "content": [
+                {
+                    "day": 1,
+                    "theme": "Introduction to Language Learning",
+                    "resource": "https://www.youtube.com/watch?v=BemDBn5H5Gc"
+                },
+                {
+                    "day": 2,
+                    "theme": "Learning new languages - The Solar System Theory",
+                    "resource": "https://www.youtube.com/watch?v=95NgtNgmnWA"
+                },
+                {
+                    "day": 3,
+                    "theme": "Understanding Syntax and Grammar",
+                    "resource": "https://www.youtube.com/watch?v=ZFyPMRzPNTE"
+                },
+                {
+                    "day": 4,
+                    "theme": "Stop Memorizing Vocabulary",
+                    "resource": "https://www.youtube.com/watch?v=NQZYL39JEFo"
+                },
+                {
+                    "day": 5,
+                    "theme": "Practice with Conversation",
+                    "resource": "https://www.youtube.com/watch?v=topBLaz4zgk"
+                },
+                {
+                    "day": 6,
+                    "theme": "Enhancing Listening Skills",
+                    "resource": "https://www.youtube.com/watch?v=52MSH5pmHk0"
+                }
+            ]
+        }        
+    ],
+    "language-testing": [
+        {   
+            "week": 1,
+            "content": [
+                {
+                    "day": 1,
+                    "theme": "Introduction of languages",
+                    "resource": "https://www.youtube.com/watch?v=BemDBn5H5Gc"
+                },
+                {
+                    "day": 2,
+                    "theme": "React JS Tutorial 2 - Hello World",
+                    "resource": "https://www.youtube.com/watch?v=Erc5XSYrwO8"
+                },
+                {
+                    "day": 3,
+                    "theme": "React JS Tutorial 3 - Folder Structure",
+                    "resource": "https://www.youtube.com/watch?v=ZFyPMRzPNTE"
+                },
+                {
+                    "day": 4,
+                    "theme": "React JS Tutorial 4 - Components",
+                    "resource": "https://www.youtube.com/watch?v=Y2hgEGPzTZY&list=PLC3y8-rFHvwgg3vaYJgHGnModB54rxOk3&index=4"
+                },
+                {
+                    "day": 5,
+                    "theme": "React JS Tutorial 5 - Functional Components",
+                    "resource": "https://www.youtube.com/watch?v=Cla1WwguArA&list=PLC3y8-rFHvwgg3vaYJgHGnModB54rxOk3&index=5"
+                }
+                ,
+                {
+                    "day": 6,
+                    "theme": "React JS Tutorial 6 - Class Components",
+                    "resource": "https://www.youtube.com/watch?v=lnV34uLEzis&list=RDCMUC80PWRj_ZU8Zu0HSMNVwKWw&index=2"
                 }
             ]
         }        
