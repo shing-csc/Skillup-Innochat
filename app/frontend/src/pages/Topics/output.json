@@ -11,7 +11,7 @@
                 ]
             },
             "2": {
-                "name": "Navigating the Blender Interface",
+                "name": "Modeling Basics",
                 "time": "60",
                 "links": [
                     "www.youtube.com",
@@ -19,64 +19,32 @@
                 ]
             },
             "3": {
-                "name": "Modeling Basics",
-                "time": "90",
+                "name": "Texturing and Materials",
+                "time": "60",
                 "links": [
                     "www.youtube.com",
                     "www.facebook.com"
                 ]
             },
             "4": {
-                "name": "Working with Materials and Textures",
-                "time": "90",
+                "name": "Lighting and Rendering",
+                "time": "60",
                 "links": [
                     "www.youtube.com",
                     "www.facebook.com"
                 ]
             },
             "5": {
-                "name": "Introduction to Animation",
-                "time": "120",
+                "name": "Animation",
+                "time": "60",
                 "links": [
                     "www.youtube.com",
                     "www.facebook.com"
                 ]
             },
             "6": {
-                "name": "Advanced Animation Techniques",
-                "time": "120",
-                "links": [
-                    "www.youtube.com",
-                    "www.facebook.com"
-                ]
-            },
-            "7": {
-                "name": "Lighting and Rendering",
-                "time": "90",
-                "links": [
-                    "www.youtube.com",
-                    "www.facebook.com"
-                ]
-            },
-            "8": {
-                "name": "Creating Realistic Materials",
-                "time": "90",
-                "links": [
-                    "www.youtube.com",
-                    "www.facebook.com"
-                ]
-            },
-            "9": {
-                "name": "Advanced Modeling",
-                "time": "120",
-                "links": [
-                    "www.youtube.com",
-                    "www.facebook.com"
-                ]
-            },
-            "10": {
-                "name": "Character Animation",
-                "time": "120",
+                "name": "Advanced Techniques",
+                "time": "60",
                 "links": [
                     "www.youtube.com",
                     "www.facebook.com"

@@ -280,8 +280,7 @@ def retrieveJson():
     string_to_json_file(chat_content, "../frontend/src/pages/Topics/output.json")
 
     return jsonify({"response": "completed"}), 200
-
-@app.route("/jsonmodify", method=["GET"]) 
+"""@app.route("/jsonmodify", method=["GET"]) 
 def json_modify():
     with open('../frontend/src/pages/Topics/output.json') as json_file:
         json_string = json_file.read()
@@ -320,6 +319,7 @@ def json_modify():
 
     return jsonify({"response": "completed"}), 200
 
+"""
 
 if __name__ == "__main__":
     app.run()

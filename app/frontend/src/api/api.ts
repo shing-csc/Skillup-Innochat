@@ -32,6 +32,11 @@ export async function chatApi(options: ChatRequest): Promise<ChatResponse> {
         throw Error(parsedResponse.error || "Unknown error");
     }
 
+    console.log("history", options.history)
+    console.log("template", options.overrides?.promptTemplate)
+    console.log("template_prefix", options.overrides?.promptTemplatePrefix)
+    console.log("template_suffix", options.overrides?.promptTemplateSuffix)
+
     return parsedResponse;
 }
 
