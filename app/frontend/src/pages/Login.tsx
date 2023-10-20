@@ -75,7 +75,7 @@ const Login = () => {
                                 className='submitButton'
                                 type = "submit"
                                 aria-label = "Submit"
-                                onClick = {()=> navigate('/main')}
+                                onClick = {()=> navigate('/joblisting')}
                             > 
                                 main -testing
                             </button>
