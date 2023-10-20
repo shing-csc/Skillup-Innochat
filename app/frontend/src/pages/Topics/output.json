@@ -7,55 +7,47 @@
                 "time": "60",
                 "links": [
                     "www.youtube.com",
-                    "www.facebook.com"
+                    "www.blender.org"
                 ]
             },
             "2": {
                 "name": "Modeling in Blender",
-                "time": "60",
+                "time": "90",
                 "links": [
                     "www.youtube.com",
-                    "www.facebook.com"
+                    "www.blender.org"
                 ]
             },
             "3": {
-                "name": "Texturing and Materials",
-                "time": "60",
+                "name": "Texturing and Materials in Blender",
+                "time": "90",
                 "links": [
                     "www.youtube.com",
-                    "www.facebook.com"
+                    "www.blender.org"
                 ]
             },
             "4": {
-                "name": "Lighting and Rendering",
-                "time": "60",
+                "name": "Animation in Blender",
+                "time": "120",
                 "links": [
                     "www.youtube.com",
-                    "www.facebook.com"
+                    "www.blender.org"
                 ]
             },
             "5": {
-                "name": "Animation in Blender",
+                "name": "Animation",
                 "time": "60",
                 "links": [
                     "www.youtube.com",
-                    "www.facebook.com"
+                    "www.blender.org"
                 ]
             },
             "6": {
-                "name": "Physics and Simulations",
+                "name": "Advanced Techniques",
                 "time": "60",
                 "links": [
                     "www.youtube.com",
-                    "www.facebook.com"
-                ]
-            },
-            "7": {
-                "name": "Advanced Techniques in Blender",
-                "time": "60",
-                "links": [
-                    "www.youtube.com",
-                    "www.facebook.com"
+                    "www.blender.org"
                 ]
             }
         }

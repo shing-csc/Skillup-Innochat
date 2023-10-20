@@ -68,6 +68,20 @@ export const Video = () => {
                 />
             </div>
         </div>
+                        <div>
+                            <h2> <br/></h2>
+                            <center>
+                            <button
+                                className='webFormButton'
+                                type = "submit"
+                                aria-label = "Submit"
+                                onClick = {()=> {navigate('/quiz');
+                                            window.scrollTo(0, 0);}}
+                            > 
+                                <div style = {{fontFamily: " 'Times New Roman', Times, serif"}}> <b> Quiz </b></div>
+                            </button>
+                            </center>
+                        </div>
         </>
     );
 }
