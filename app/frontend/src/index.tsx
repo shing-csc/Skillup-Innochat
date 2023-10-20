@@ -15,6 +15,8 @@ import Main from "./pages/Main"
 import StudyPlan from "./pages/StudyPlan"
 import Chat from "./pages/chat/Chat"
 import ProgressPage from "./pages/ProgressPage"
+import WebFormBahav from "./pages/WebFormBahav";
+import { Video } from "./pages/Video";
 
 initializeIcons();
 
@@ -25,10 +27,12 @@ export default function App() {
             <Routes>
                 <Route path="/" element={<Login />} />
                 <Route path="/webform" element={<WebForm />} />
+                <Route path="/webform2" element={<WebFormBahav />} />
                 <Route path="/progresspage" element={<ProgressPage />} />
                 <Route path="/chat" element={<Chat />} />
                 <Route path="/studyplan" element={<StudyPlan />} />
                 <Route path="/main" element= {<Main/>}/>
+                <Route path="/video/:videoId" element= {<Video/>}/>
             </Routes>
 
         </BrowserRouter>

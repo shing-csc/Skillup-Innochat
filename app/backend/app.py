@@ -218,7 +218,10 @@ def compute_embedding(text):
 def nonewlines(s: str) -> str:
     return s.replace(' ', ' ').replace('\r', ' ')
 
-systemMessage = """
+
+@app.route("/json", methods=["GET"])
+def retrieveJson():
+    systemMessage = """
                 Assistant that ONLY answers JSON formatted response. You are a profession teacher that creates designated study plan for students with different needs.
                 Return a study plan in JSON format. Below is a situation and an example.
                 A student is studying Calculus 1. 
@@ -243,9 +246,6 @@ systemMessage = """
                     }
                 }
                 """
-
-@app.route("/json", methods=["GET"])
-def retrieveJson():
 
     query = "Generate a blender course from beginners to advanced."
     query_vector = compute_embedding(query)

@@ -28,9 +28,8 @@
 /** The below are the components used in the WebForm.tsx */
 
 .webFormButton{
-    width: 18rem;
+    width: 12rem;
     height: 3rem;
-    background-color: rgba(84, 230, 147, 0.593);
     
     color: black;
     

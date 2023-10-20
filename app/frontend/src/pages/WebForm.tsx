@@ -10,6 +10,10 @@ const WebForm = () => {
     const [checked, setChecked] = useState(false);
     const navigate = useNavigate();
 
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     return (
         < div style = {{backgroundColor: "white"}}>
             <Container >
@@ -30,7 +34,9 @@ const WebForm = () => {
                                     
 
                                     }}>
-                                <h6> Progress Bar: {now}%</h6>
+                                
+                                <h6 style = {{textAlign: "left", textDecoration: "underline"}}> Progress Bar </h6>
+                                <h6 > Ongoing: {now}%</h6>
                         
 
                         <ProgressBar 
@@ -42,81 +48,91 @@ const WebForm = () => {
                             variant="success"
                             
                         />
+
+                        <div> <h1> <br/> </h1></div>
+                        <div> <h1> <br/> </h1></div>
+
+                        <div>
+                            <h6 style = {{textAlign: "left", textDecoration: "underline"}}>
+                                Resume Submission
+                            </h6>
+                            <Form.Group controlId="formFile" className="mb-3" style = {{width: "20rem"}}>
+                                <Form.Label style = {{textAlign: "left"}}> 
+                                    We will analysis your skills based on the file you submitted 
+                                    </Form.Label>
+                                <Form.Control type="file" />
+                            </Form.Group>
+                        </div>
                         </div>
 
                     </Col>
+
+                    <Col md = {1} lg = {1}>
+                            
+                    </Col>
                     
 
-                    <Col md = {9}>
+                    <Col md = {8}>
                         <div>
                             <h4>
-                                Behavioral questions
+                                Questions regarding the learning subjects
                             </h4>
-                            <QuestionComponent 
+                            <QuestionComponent
                                 now = {now}
                                 setNow = {setNow}
                                 question = {1}
-                                choices = {['Technology', 'Business', 'Lanaguages']}
-                                content = "Which field are you more interested?"
+                                choices = {['Student', 'Technology', 'Healthcare', 'Finance', 'Education', 'Other']}
+                                content = "What is your current occupation or industry background?"
                             />
                             <QuestionComponent
                                 now = {now}
                                 setNow = {setNow}
                                 question = {2}
-                                choices = {['Leverage your knowledge in a particular field', 
-                                'For re-entering the labour market', 
-                                'Learning for interest']}
-                                content = "Do you have any specific goals for your study?"
+                                choices = {['Software Developer', 'Data Scientist', 'Product Manager', 'Designer', 'Other']}
+                                content = "Are there any specific job roles or positions that you aspire to?"
                             />
                             <QuestionComponent
                                 now = {now}
                                 setNow = {setNow}
                                 question = {3}
-                                choices = {['Below 6 hours', 
-                                'Between 6 - 10 hours', 
-                                'More than 10 hours']}
-                                content = "How many hours per week do you plan to dedicate to studying?"
+                                choices = {['Programming Languages', 'Graphic Design', 'Video Editing', 'Language Learning']}
+                                content = "Which specific topics are you interested in learning?"
                             />
                             <QuestionComponent
                                 now = {now}
                                 setNow = {setNow}
                                 question = {4}
-                                choices = {['Below 6 hours', 
-                                'Between 6 - 10 hours', 
-                                'More than 10 hours']}
-                                content = "How many hours per week do you plan to dedicate to studying?"
+                                choices = {['Python', 'JavaScript', 'React.js', 'Adobe Photoshop', 'Other']}
+                                content = "Are there any programming languages, software tools or frameworks you want to focus on?"
+                            />
+                           <QuestionComponent
+                                now = {now}
+                                setNow = {setNow}
+                                question = {5}
+                                choices = {['Beginner', 'Intermediate', 'Advanced']}
+                                content = "What is your current level of experience or knowledge in the topic(s) you want to learn?"
                             />
                             <QuestionComponent
                                 now = {now}
                                 setNow = {setNow}
-                                question = {5}
-                                choices = {['Written Comments', 'Verbal Feedback', 'One-on-one Consultation']}
-                                content = "What type of feedback is most helpful for your learning process?"
+                                question = {6}
+                                choices = {['Yes', 'No']}
+                                content = "Have you had any past learning experience in the topic(s) you want to learn?"
                             />
                             <QuestionComponent
                                 now = {now}
                                 setNow = {setNow}
                                 question = {7}
-                                choices = {['Start Early', 'Work Steadily Over Time', 'Last Minute']}
-                                content = "How do you typically handle assignments and deadlines?"
+                                choices = {['Understanding Concepts', 'Lack of Practice', 'Lack of Resources', 'Time Management', 'Other']}
+                                content = "Are there any difficulties you have encountered in the past while learning similar topics?"
                             />
                             <QuestionComponent
                                 now = {now}
                                 setNow = {setNow}
                                 question = {8}
-                                choices = {['English', 'Spanish', 'Mandarin', 'Other']}
-                                content = "What is your preferred language of instruction?"
+                                choices = {['Building a Website', 'Creating Professional Design', 'Becoming Fluent in a Language', 'Other']}
+                                content = "Are there any specific goals or outcomes you wish to achieve by learning these topics?"
                             />
-                        </div>
-
-                        <div>
-                            <h4>
-                                Resume Submission
-                            </h4>
-                            <Form.Group controlId="formFile" className="mb-3" style = {{width: "40rem"}}>
-                                <Form.Label> We will analysis your skills based on the file you submitted </Form.Label>
-                                <Form.Control type="file" />
-                            </Form.Group>
                         </div>
 
                         <div>
@@ -125,22 +141,14 @@ const WebForm = () => {
                                 className='webFormButton'
                                 type = "submit"
                                 aria-label = "Submit"
-                                onClick = {()=> navigate('/progresspage')}
+                                onClick = {()=> {navigate('/webform2');
+                                            window.scrollTo(0, 0);}}
                             > 
-                                <b> Proceed to our Personal Planner </b>
+                                <div style = {{fontFamily: " 'Times New Roman', Times, serif"}}> <b> Behaviour questions </b></div>
                             </button>
-                        </div>
-
-                        <div>
+                            <h2> <br/> </h2>
+                            <h2> <br/> </h2>
                             
-                            <button
-                                className='webFormButton'
-                                type = "submit"
-                                aria-label = "Submit"
-                                onClick = {()=> navigate('/main')}
-                            > 
-                                <b> Only for testing: to the main.tsx </b>
-                            </button>
                         </div>
 
                     </Col>
@@ -148,9 +156,7 @@ const WebForm = () => {
                 </Row>
                 
             </Container>
-            
 
-            
         </div>
     )
 }
