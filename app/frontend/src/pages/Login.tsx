@@ -71,9 +71,7 @@ const Login = () => {
                                 Sign In
                             </button>
 
-                            {/**
-                             * 
-                             *  <button
+                            <button
                                 className='submitButton'
                                 type = "submit"
                                 aria-label = "Submit"
@@ -81,7 +79,7 @@ const Login = () => {
                             > 
                                 main -testing
                             </button>
-                             */}
+                            
                            
 
                         </Form>
