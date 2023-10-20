@@ -1,61 +1,34 @@
 {
-    "subject": "Blender Course",
+    "subject": "Blender",
     "plan": {
         "chapters": {
             "1": {
                 "name": "Introduction to Blender",
-                "time": "30",
+                "time": "1 week",
                 "links": [
-                    "www.youtube.com/intro_blender",
-                    "www.facebook.com/intro_blender"
+                    "https://www.youtube.com/playlist?list=PLa1F2ddGya_-UvuAqHAksYnB0qL9yWDO6"
                 ]
             },
             "2": {
-                "name": "Navigating the Blender interface",
-                "time": "30",
+                "name": "3D Modeling",
+                "time": "2-3 weeks",
                 "links": [
-                    "www.youtube.com/navigating_blender",
-                    "www.facebook.com/navigating_blender"
+                    "https://www.youtube.com/playlist?list=PLjEaoINr3zgFX8ZsChQVQsuDSjEqdWMAD"
                 ]
             },
             "3": {
-                "name": "Modeling Basics",
-                "time": "60",
+                "name": "Enhancing 3D Modeling Skills",
+                "time": "1 week",
                 "links": [
-                    "www.youtube.com/modeling_basics",
-                    "www.facebook.com/modeling_basics"
+                    "https://www.youtube.com/watch?v=yCHT23A6aJA",
+                    "https://www.youtube.com/watch?v=dEGJeVnWZAA"
                 ]
             },
             "4": {
-                "name": "Texturing and UV Mapping",
-                "time": "60",
+                "name": "Advanced Topics",
+                "time": "1 week",
                 "links": [
-                    "www.youtube.com/texturing_blender",
-                    "www.facebook.com/uv_mapping"
-                ]
-            },
-            "5": {
-                "name": "Animation and Rigging",
-                "time": "90",
-                "links": [
-                    "www.youtube.com/animation_blender",
-                    "www.facebook.com/rigging_blender"
-                ]
-            },
-            "6": {
-                "name": "Lighting and Rendering",
-                "time": "60",
-                "links": [
-                    "www.youtube.com/lighting_blender",
-                    "www.facebook.com/rendering_blender"
-                ]
-            },
-            "7": {
-                "name": "Advanced Techniques",
-                "time": "120",
-                "links": [
-                    "www.youtube.com/advanced_blender",
-                    "www.facebook.com/techniques_blender"
+                    "https://www.youtube.com/playlist?list=PLjEaoINr3zgHJVJF3T3CFUAZ6z11jKg6a"
                 ]
             }
         }

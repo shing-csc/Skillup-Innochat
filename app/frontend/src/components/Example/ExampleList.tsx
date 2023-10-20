@@ -12,7 +12,7 @@ const EXAMPLES: ExampleModel[] = [
         text: "What are the common challenges of lauguage learning?",
         value: "What are the common challenges of lauguage learning?"
     },
-    { text: "Modify the course of Data Science with Finance?", value: "Modify the course of Data Science with Finance?" },
+    { text: "What is a good video on teaching Python file handling??", value: "What is a good video on teaching Python file handling??" },
     { text: "What are the key differences between stocks and bonds?", value: "What are the key differences between stocks and bonds?" }
 ];
 

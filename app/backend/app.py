@@ -280,46 +280,6 @@ def retrieveJson():
     string_to_json_file(chat_content, "../frontend/src/pages/Topics/output.json")
 
     return jsonify({"response": "completed"}), 200
-"""@app.route("/jsonmodify", method=["GET"]) 
-def json_modify():
-    with open('../frontend/src/pages/Topics/output.json') as json_file:
-        json_string = json_file.read()
-    
-    query = "You have the following study plan in the format of JSON." + json_string + "The study plan is too short for her. Could you extend the time of each chapter for studying? Remember to provide a response in terms of JSON." 
-    query_vector = compute_embedding(query)
-
-    r = search_client.search(query, 
-                        top=3, 
-                        vector=query_vector, 
-                        top_k=50, 
-                        vector_fields="embedding")
-
-    results = [doc["sourcepage"] + ": " + nonewlines(doc["content"]) for doc in r]
-    messages = [
-        {'role' : 'system', 'content' : systemMessage},
-        {'role' : 'user', 'content' : query + "   Source:" + " ".join(results)}
-    ]
-
-    chat_completion = openai.ChatCompletion.create(
-        deployment_id="chat",
-        model="gpt-35-turbo",
-        messages=messages, 
-        temperature=0.7, 
-        max_tokens=1024, 
-        n=1)
-    
-    chat_content = chat_completion.choices[0].message.content
-
-    def string_to_json_file(string, file_name):
-        string = json.loads(string)
-        with open(file_name, 'w') as json_file:
-            json.dump(string, json_file, indent=4)
-
-    string_to_json_file(chat_content, "../frontend/src/pages/Topics/output.json")
-
-    return jsonify({"response": "completed"}), 200
-
-"""
 
 if __name__ == "__main__":
     app.run()
