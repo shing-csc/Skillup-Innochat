@@ -17,6 +17,7 @@ import Chat from "./pages/chat/Chat"
 import ProgressPage from "./pages/ProgressPage"
 import WebFormBahav from "./pages/WebFormBahav";
 import { Video } from "./pages/Video";
+import Quiz from "./pages/Quiz"
 
 initializeIcons();
 
@@ -33,6 +34,7 @@ export default function App() {
                 <Route path="/studyplan" element={<StudyPlan />} />
                 <Route path="/main" element= {<Main/>}/>
                 <Route path="/video/:videoId" element= {<Video/>}/>
+                <Route path="/quiz" element= {<Quiz/>}/>
             </Routes>
 
         </BrowserRouter>
