@@ -9,11 +9,11 @@ export type ExampleModel = {
 
 const EXAMPLES: ExampleModel[] = [
     {
-        text: "Who has the access to InnoWing?",
-        value: "Who has the access to Innovation Wing?"
+        text: "What are the common challenges of lauguage learning?",
+        value: "What are the common challenges of lauguage learning?"
     },
-    { text: "How to become a member of InnoWing?", value: "How to become a member of InnoWing?" },
-    { text: "What is SIG?", value: "What is SIG?" }
+    { text: "Modify the course of Data Science with Finance?", value: "Modify the course of Data Science with Finance?" },
+    { text: "What are the key differences between stocks and bonds?", value: "What are the key differences between stocks and bonds?" }
 ];
 
 interface Props {

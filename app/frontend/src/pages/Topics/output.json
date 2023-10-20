@@ -1,5 +1,5 @@
 {
-    "subject": "Blender",
+    "subject": "Blender Course",
     "plan": {
         "chapters": {
             "1": {
@@ -7,7 +7,7 @@
                 "time": "60",
                 "links": [
                     "www.youtube.com",
-                    "www.blender.org"
+                    "www.facebook.com"
                 ]
             },
             "2": {
@@ -15,7 +15,7 @@
                 "time": "90",
                 "links": [
                     "www.youtube.com",
-                    "www.blender.org"
+                    "www.facebook.com"
                 ]
             },
             "3": {
@@ -23,31 +23,47 @@
                 "time": "90",
                 "links": [
                     "www.youtube.com",
-                    "www.blender.org"
+                    "www.facebook.com"
                 ]
             },
             "4": {
-                "name": "Animation in Blender",
-                "time": "120",
+                "name": "Lighting and Rendering in Blender",
+                "time": "60",
                 "links": [
                     "www.youtube.com",
-                    "www.blender.org"
+                    "www.facebook.com"
                 ]
             },
             "5": {
-                "name": "Animation",
-                "time": "60",
+                "name": "Animation in Blender",
+                "time": "90",
                 "links": [
                     "www.youtube.com",
-                    "www.blender.org"
+                    "www.facebook.com"
                 ]
             },
             "6": {
-                "name": "Advanced Techniques",
+                "name": "Simulation and Dynamics in Blender",
+                "time": "90",
+                "links": [
+                    "www.youtube.com",
+                    "www.facebook.com"
+                ]
+            },
+            "7": {
+                "name": "Compositing and Post-Processing in Blender",
                 "time": "60",
                 "links": [
                     "www.youtube.com",
-                    "www.blender.org"
+                    "www.facebook.com"
+                ]
+            },
+            "8": {
+                "name": "Advanced Techniques in Blender",
+                "time": "120",
+                "links": [
+                    "www.youtube.com",
+                    "www.facebook.com"
                 ]
             }
         }

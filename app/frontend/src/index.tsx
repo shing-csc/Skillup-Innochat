@@ -17,8 +17,10 @@ import Chat from "./pages/chat/Chat"
 import ProgressPage from "./pages/ProgressPage"
 import WebFormBahav from "./pages/WebFormBahav";
 import { Video } from "./pages/Video";
-import ToDoList from "./ToDoList";
+import ToDoList from "./pages/ToDoList";
 import Quiz from "./pages/Quiz"
+import Dashboard from "./pages/DashBoard"
+
 
 initializeIcons();
 
@@ -35,6 +37,8 @@ export default function App() {
                 <Route path="/studyplan" element={<StudyPlan />} />
                 <Route path="/main" element= {<Main/>}/>
                 <Route path="/video/:videoId" element= {<Video/>}/>
+                <Route path="/todolist" element = {<ToDoList/>}/>
+                <Route path="/dashboard" element = {<Dashboard/>}/>
             </Routes>
 
         </BrowserRouter>
