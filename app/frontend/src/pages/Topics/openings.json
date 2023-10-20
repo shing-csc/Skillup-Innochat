@@ -1,0 +1,50 @@
+{
+    "software": [
+        {
+            "jobs": [
+                {
+                    "title": "Software Engineer",
+                    "level": "Entry-level",
+                    "number": "1",
+                    "company": "MedChain"
+                },
+                {
+                    "title": "Front End Developer",
+                    "level": "Mid-level",
+                    "number": "2",
+                    "company": "TechEase"
+                },
+                {
+                    "title": "Back End Developer",
+                    "level": "Senior",
+                    "number": "3",
+                    "company": "DataCore"
+                },
+                {
+                    "title": "Full Stack Developer",
+                    "level": "Junior",
+                    "number": "4",
+                    "company": "WebSolutions"
+                },
+                {
+                    "title": "DevOps Engineer",
+                    "level": "Mid-level",
+                    "number": "5",
+                    "company": "CloudSphere"
+                },
+                {
+                    "title": "Data Scientist",
+                    "level": "Senior",
+                    "number": "6",
+                    "company": "InsightData"
+                },
+                {
+                    "title": "Machine Learning Engineer",
+                    "level": "Entry-level",
+                    "number": "7",
+                    "company": "AI Innovations"
+                }
+            ]
+        }
+    ]   
+}

@@ -21,13 +21,13 @@ import ToDoList from "./pages/ToDoList";
 import Quiz from "./pages/Quiz"
 import Dashboard from "./pages/DashBoard"
 
+import JobListing from "./pages/JobListing";
 
 initializeIcons();
 
 export default function App() {
     return (
         <BrowserRouter>
-            
             <Routes>
                 <Route path="/" element={<Login />} />
                 <Route path="/webform" element={<WebForm />} />
@@ -37,10 +37,12 @@ export default function App() {
                 <Route path="/studyplan" element={<StudyPlan />} />
                 <Route path="/main" element= {<Main/>}/>
                 <Route path="/video/:videoId" element= {<Video/>}/>
+                <Route path="/quiz" element= {<Quiz/>}/>
+                <Route path="/todolist" element= {<ToDoList/>}/>
+                <Route path="/job" element= {<JobListing/>}/>
                 <Route path="/todolist" element = {<ToDoList/>}/>
                 <Route path="/dashboard" element = {<Dashboard/>}/>
             </Routes>
-
         </BrowserRouter>
     );
 }
